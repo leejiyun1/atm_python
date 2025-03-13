@@ -7,7 +7,7 @@ while True:
     if num == "1":
         print("입금기능입니다.")  
         deposit_amount = input("입금하실 금액을 입력해주세요")
-        if deposit_amount.isdigit() and int(deposit_amount) > 0 :
+        if deposit_amount.isdigit() and int(deposit_amount) > 0:
             balance += int(deposit_amount)
             print(f"{deposit_amount}을 입금했고 잔액은 {balance}입니다.")
 
@@ -15,7 +15,14 @@ while True:
             print("정신차려 이 각박한 세상속에서!")
 
     if num == "2":
-        pass
+        withdraw_amount = input("출금하실 금액을 입력해주세요")
+        if withdraw_amount.isdigit() and int(withdraw_amount) > 0:
+            withdraw_amount = min(balance, int(withdraw_amount))
+            balance -= int(withdraw_amount)
+            print(f"{withdraw_amount}을 출금했고 잔액은 {balance}입니다.")
+
+        else:
+            print("정신차려 이 각박한 세상속에서!")
 
     if num == "3":
         pass
