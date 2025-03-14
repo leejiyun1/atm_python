@@ -26,6 +26,8 @@
 
 ## 🛠️ 사용 방법
 
+![Image](https://github.com/user-attachments/assets/30f0f31b-f970-46d8-a71e-a68572049257)
+
 1. Python 3.x가 설치되어 있는지 확인합니다.
 2. 프로그램 파일(`atm.py`)을 실행합니다.
 3. 프로그램 실행 후 아래 메뉴 중 하나를 선택합니다:
